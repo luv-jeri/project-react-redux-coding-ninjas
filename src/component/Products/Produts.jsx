@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Products.module.css';
 import ProdcutCard from '../ProductCard/ProdcutCard';
+
 function Produts({ produts }) {
   return (
     <div className={style.container}>
@@ -8,7 +9,7 @@ function Produts({ produts }) {
         ? produts.map((product) => {
             return <ProdcutCard key={product.id} {...product} />;
           })
-        : 'Nothing'}
+        : 'No products found'}
     </div>
   );
 }
