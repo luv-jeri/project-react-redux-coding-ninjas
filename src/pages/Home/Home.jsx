@@ -3,7 +3,7 @@ import style from './Home.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../../store/productSlice';
 import Products from '../../component/Products/Produts';
-import Loading from '../../component/Loading/Loading';
+
 import Pager from '../../component/Pager/Pager';
 function Home() {
   const { products, limit } = useSelector((state) => state);
@@ -22,14 +22,8 @@ function Home() {
 
   return (
     <div className={style.container}>
-      {products.loading ? (
-        <Loading />
-      ) : (
-        <>
-          <Products produts={products.data} />
-          <Pager setter={setPage} />
-        </>
-      )}
+      <Products produts={products.data} />
+      <Pager setter={setPage} page={page} />
     </div>
   );
 }

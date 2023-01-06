@@ -6,11 +6,13 @@
     align-items: center;
     justify-content: space-between;
    
-   
-
 }
 
-
+.pager_item_active {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    scale: 1.2;
+}
 
 .pager_num {
     height: 1.3rem;

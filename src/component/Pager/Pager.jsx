@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Pager.module.css';
-function Pager({ setter }) {
+function Pager({ setter, page }) {
   const array = [...Array(20).keys()];
 
   return (
@@ -10,7 +10,13 @@ function Pager({ setter }) {
           setter(el);
         };
         return (
-          <div onClick={handleClick} key={el} className={style.pager_num}>
+          <div
+            onClick={handleClick}
+            key={el}
+            className={`${style.pager_num}  ${
+              el === page ? style.pager_item_active : ''
+            } `}
+          >
             {el}
           </div>
         );
