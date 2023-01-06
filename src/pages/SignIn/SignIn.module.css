@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(#eac7c7 3.5px, transparent 3.5px), radial-gradient(#eac7c7 3.5px, transparent 3.5px);
+    background-size: 54px 54px;
+    background-position: 0 0, 27px 27px;
+    background-color: #ffffff;
+}
+
+.box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 0 0 var(--clr-accent);
+    border: 1px solid #ddd;
+}
+
+.box h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+}
+
+.field input {
+    height: 2.5rem;
+    padding: 0 0.8rem;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-shadow: 2px 2px 0 0 var(--clr-accent);
+    border: 1px solid #ddd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    height: 40px;
+    padding: 0 20px;
+    box-shadow: 1px 1px 0 0 var(--clr-accent);
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--clr-primary);
+    color: var(--clr-dark);
+    cursor: pointer;
+}

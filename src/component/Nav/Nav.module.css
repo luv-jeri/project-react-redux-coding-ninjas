@@ -1,0 +1,73 @@
+.nav_container {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--clr-primary);
+    padding: 0 3rem;
+    position: fixed;
+    top : 0;
+    border-bottom:1px solid var(--clr-accent);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.logo h1 {
+    font-size: 1rem;
+    color: var(--clr-white);
+    font-weight: 700;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 100%;
+}
+
+.nav_links a {
+    position: relative;
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 1rem;
+    border-bottom: 3px solid var(--clr-secondary);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_links a:hover {
+    opacity: 0.6;
+    border-bottom: 3px solid var(--clr-accent);
+}
+
+.nav_links button {
+    color: var(--clr-white);
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_links button:hover {
+    opacity: 0.6;
+}
+
+.cart_num {
+    color: var(--clr-accent);
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding: 0.2rem 0.5rem;
+ 
+}

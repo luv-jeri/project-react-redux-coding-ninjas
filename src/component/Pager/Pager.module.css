@@ -1,0 +1,30 @@
+.pager_container {
+    height: 8vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+
+}
+
+
+
+.pager_num {
+    height: 1.3rem;
+    width: 1.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--clr-dark);
+    transition: 0.4s;
+}
+
+.pager_num:hover {
+    background-color: var(--clr-primary);
+}
